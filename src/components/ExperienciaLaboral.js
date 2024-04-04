@@ -1,3 +1,4 @@
+'use client'
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import React from 'react';
 import TrabajoComponente from './TrabajoComponente';
