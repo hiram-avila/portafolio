@@ -4,37 +4,15 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import ExperienciaLaboral from '@/components/ExperienciaLaboral';
 import Navbar from '@/components/Navbar';
+import Projects from '@/components/Projects';
 
 export default function Home() {
-  
-  const trabajos = [
-    {
-      title: "Frontend Development",
-      description: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.",
-      year: "2007"
-    },
-    {
-        title: "Frontend Development",
-        description: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.",
-        year: "2007"
-      },
-      {
-        title: "Frontend Development",
-        description: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.",
-        year: "2007"
-      },
-      {
-        title: "Frontend Development",
-        description: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.",
-        year: "2007"
-      },
-
-  ];
 
   return (
     <>
-      < Navbar />
-      <div className="  bg-gradient-to-tl from-cyan-950 to-stone-800 mt-10 ">
+      <div className="  bg-gradient-to-tl from-cyan-950 to-stone-800">
+
+        < Navbar />
         <div className="w-full ">
           <section className="py-16 ml-36 flex justify-center items-center max-w-2xl">
             <motion.div
@@ -44,32 +22,35 @@ export default function Home() {
               className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
             >
               <h1 className="text-white mb-4 text-7xl  lg:leading-normal font-extrabold">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-2">
                   ¡Hey! {" "}
                 </span>
                 <br />
                 <TypeAnimation
-                  sequence={[
-                    " Soy Hiram",
-                    10, // Espera de 10 ms antes de continuar
-                  ]}
-                  wrapper="span"
-                  speed={200} // Ralentizar la velocidad de escritura
-                  delay={0}
+                    sequence={[
+                      " Soy Hiram",
+                      10, // Espera de 10 ms antes de continuar
+                    ]}
+                    wrapper="span"
+                    speed={200} // Ralentizar la velocidad de escritura
+                    delay={0}
                 />
               </h1>
-              <p className="text-white text-3xl font-semibold ">
-                Más de 5 años de experiencia en el desarrollo de aplicaciones web robustas y escalables. <b className="text-orange-400">Desarrollador Full-stack. </b>
+              <p className="text-white text-3xl font-semibold leading-10">
+                Más de 5 años de experiencia en el desarrollo de aplicaciones web robustas y escalables.
+                {" "} {/* Espacio en blanco aquí */}
+                <b className="text-orange-400">Desarrollador Full-stack.</b>
               </p>
+
               <div className="flex mt-6 ">
-                <button className="flex items-center px-4 py-3 bg-customGreen text-white font-bold rounded-2xl text-xl hover:bg-customHover">
-                  Contactame
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 ml-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                <button className="flex items-center px-4 py-3 bg-customGreen text-white font-bold rounded-2xl text-xl hover:bg-customHover" style={{ letterSpacing: '1px' }}>
+                  Contáctame
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6 ml-2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                   </svg>
                 </button>
 
-                <button className="flex items-center mx-4 px-4 py-3 bg-customGreen text-white font-bold text-xl rounded-2xl hover:bg-customHover">
+                <button className="flex items-center mx-4 px-4 py-3 bg-customGreen text-white font-bold text-xl rounded-2xl hover:bg-customHover" style={{ letterSpacing: '1px' }}>
                   LinkedIn
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8 ml-2">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -85,10 +66,10 @@ export default function Home() {
             </motion.div>
           </section>
 
-          <div className="mt-20 w-full flex justify-center items-center">
+          <div className="mt-16 w-full flex justify-center items-center">
             <ExperienciaLaboral />
           </div>
-
+                  <Projects/>
         </div>
       </div>
     </>
