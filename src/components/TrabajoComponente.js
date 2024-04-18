@@ -16,7 +16,7 @@ const TrabajoComponente = ({ trabajo }) => {
             </div>
             <div className="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3 ">
                 <p>{trabajo.description}</p>
-                <a href="#" className="text-blue-500 hover:text-blue-700">Saber más</a>
+                <p className='text-orange-700'>{trabajo.tecnologias}</p>
             </div>
         </div>
     )

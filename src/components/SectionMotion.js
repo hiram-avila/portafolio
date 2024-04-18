@@ -52,8 +52,6 @@ const SectionMotion = () => {
                             <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
                         </svg>
                     </button>
-                    <p>hola</p>
-
                 </div>
             </motion.div>
         </section>

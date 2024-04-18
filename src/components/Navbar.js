@@ -8,7 +8,7 @@ const Navbar = () => {
           <div className="items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-search">
             <ul className="flex flex-col  bg-transparent mt-3 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
-                <a href="#" className="transition-colors duration-500 ease-in-out block text-base py-3 px-3 rounded text-white hover:text-orange-500 md:p-0 md:dark:hover:bg-transparent">Experiencia</a>
+                <a href="#experiencia" className="transition-colors duration-500 ease-in-out block text-base py-3 px-3 rounded text-white hover:text-orange-500 md:p-0 md:dark:hover:bg-transparent">Experiencia</a>
               </li>
               <li>
                 <a href="#proyectos" className="transition-colors duration-500 ease-in-out block text-base py-3 px-3 rounded text-white hover:text-orange-500 md:p-0 md:dark:hover:bg-transparent">Proyectos</a>
